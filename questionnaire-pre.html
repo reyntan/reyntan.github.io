@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CS4249 Assignment 1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Welcome</a></li>
+                        <li class="active"><a href="questionnaire-pre.html">Pre Questionnaire</a></li>
+                        <li><a href="instructions.html">Instructions</a></li>
+                        <li><a href="experiment.html">Experiment</a></li>
+                        <li><a href="questionnaire-post.html">Post Questionnaire</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+       <div class="container survey-main">
+            <div class="row survey-main">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScHqVARourDKG7XieHmvJp3XdNNwygR4FDDlOCyKk5oPgOQAA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> 
+                
+            </div>
+            <div class="row" style="text-align: right; margin-top: 50px;">
+
+                    Click once you've completed the survey <a href="instructions.html"><button  class="btn btn-primary btn-lg">Next</button></a>
+
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/DataStorage.js"></script>
+        <script src="js/ACPToolKit.js"></script>
+        <script src="js/main.js"></script>
+        <!--
+        Using Google Forms
+        <script>
+            $(function () {
+                $('#pre-expt-form').submit(function (event) {
+                    event.preventDefault();
+                    var formResponses = $(this).serializeArray();
+                    // Do your own form validation here.
+                    ACPToolKit.downloadFormData(formResponses, 'pre');
+                    window.location = 'instructions.html';
+                });
+            });
+        </script>-->
+    </body>
+</html>

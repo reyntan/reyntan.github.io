@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CS4249 Assignment 1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Welcome</a></li>
+                        <li><a href="questionnaire-pre.html">Pre Questionnaire</a></li>
+                        <li class="active"><a href="instructions.html">Instructions</a></li>
+                        <li><a href="experiment.html">Experiment</a></li>
+                        <li><a href="questionnaire-post.html">Post Questionnaire</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    
+                    <div class="wow fadeInDown">
+                    <center><img style="margin-top: 50px;" src="img/cc.png" class="circle-img"></center>
+                    <h1>Instructions</h1>
+                    <hr>
+                    <p>Dear participant <span class="js-pid pid"></span>, thank you for participating! Please read the instructions before the experiment.
+                </div>  
+                
+            <div class="wow fadeInUp"> 
+                <h2> Process </h2>
+                <P> The steps for the experiment are as follows:
+                <ol><li>Before you begin, you will undergo a <B>pre-trial</B> after you press 'Next' to familiarise yourself with both copy-paste techniques.</li>
+
+                    <li>Next, the actual experiment involves <B>27 trials</B> of copy-paste tasks per technique. There will be a <B>one minute break</B> in between techniques. </li>
+
+                    <li>Thus, there will be 54 trials for one experimental set. You will <B>repeat</B> the set 3 times in total.</li>
+                </ol>
+                </P>
+            </div>
+                    
+            <div class="wow fadeInUp">
+                <h2> What you'll do </h2>
+                <img src="img/copypasteexample.png" class="acp-eg">
+            </div>
+                    
+            <div class="wow fadeInUp">
+                <h2> The techniques </h2>
+                <div class="col-md-4">
+                    <h3>Traditional</h3>
+                    Press <span class="key">CTRL - C</span> + <span class="key">CTRL - V</span> to copy and paste selected text in the windows.
+                </div>
+                <div class="col-md-8">
+                    <h3>AutoComPaste</h3>
+                    Begin by typing the text in the Text Editor window. A list of suggestions will drop-down.<P></P><b>Pasting text</b><br> Use up and down arrow keys to select desired text and press <span class="key">Enter</span>. <P><b>Pasting sentences</b><br>Use right arrow key to paste the next sentence after the current sentence.
+                </div>
+            </div>
+
+                    <form class="form-inline">
+                        <button type="submit" class="btn btn-primary btn-lg">Next</button>
+                    </form>
+                
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/DataStorage.js"></script>
+        <script src="js/ACPToolKit.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            $(function () {
+                $('form').submit(function (event) {
+                    event.preventDefault();
+                    window.location = 'experiment.html';
+                });
+            });
+        </script>
+    </body>
+</html>
